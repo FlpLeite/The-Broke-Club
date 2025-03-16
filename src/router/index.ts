@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Transactions from '../views/Transactions.vue'
+import Reports from '../views/Reports.vue'
 import Login from '../views/auth/Login.vue'
 import Signup from '../views/auth/Signup.vue'
 import { useAuthStore } from '../stores/auth'
@@ -34,6 +35,12 @@ const router = createRouter({
       path: '/transactions',
       name: 'transactions',
       component: Transactions,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/reports',
+      name: 'reports',
+      component: Reports,
       meta: { requiresAuth: true }
     }
   ]

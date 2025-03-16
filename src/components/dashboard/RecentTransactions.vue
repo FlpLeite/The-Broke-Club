@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useTransactionsStore } from '../../stores/transactions'
+import type { Transaction } from '../../stores/transactions'
 
-const transactionsStore = useTransactionsStore()
+const props = defineProps<{
+  transactions: Transaction[]
+}>()
 
 const recentTransactions = computed(() => {
-  return [...transactionsStore.transactions]
+  return [...props.transactions]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 5)
 })

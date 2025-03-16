@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useAuthStore } from '../stores/auth'
+
+const authStore = useAuthStore()
+const isAuthenticated = computed(() => authStore.isAuthenticated)
+</script>
+
 <template>
   <div class="bg-gradient-to-b from-primary-50 to-white">
     <!-- Hero Section -->
@@ -11,12 +19,19 @@
             O Controlador de Investimentos ajuda você a acompanhar suas receitas e despesas, gerenciar seu orçamento e alcançar seus objetivos financeiros.
           </p>
           <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <router-link to="/signup" class="btn btn-primary text-center py-3 px-6 text-lg">
-              Começar Agora
-            </router-link>
-            <router-link to="/login" class="btn btn-secondary text-center py-3 px-6 text-lg">
-              Entrar
-            </router-link>
+            <template v-if="!isAuthenticated">
+              <router-link to="/signup" class="btn btn-primary text-center py-3 px-6 text-lg">
+                Começar Agora
+              </router-link>
+              <router-link to="/login" class="btn btn-secondary text-center py-3 px-6 text-lg">
+                Entrar
+              </router-link>
+            </template>
+            <template v-else>
+              <router-link to="/dashboard" class="btn btn-primary text-center py-3 px-6 text-lg">
+                Ir para o Painel
+              </router-link>
+            </template>
           </div>
         </div>
         <div class="hidden md:block">
@@ -71,7 +86,7 @@
     </div>
 
     <!-- CTA Section -->
-    <div class="bg-primary-600 py-16">
+    <div v-if="!isAuthenticated" class="bg-primary-600 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold text-white mb-4">Pronto para Assumir o Controle das Suas Finanças?</h2>
         <p class="text-xl text-primary-100 mb-8">

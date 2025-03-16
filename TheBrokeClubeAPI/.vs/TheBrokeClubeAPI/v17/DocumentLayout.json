@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|c:\\users\\felip\\onedrive\\documentos\\thebrokeclub\\thebrokeclubeapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|c:\\users\\felip\\onedrive\\documentos\\thebrokeclub\\thebrokeclubeapi\\thebrokeclubeapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|solutionrelative:thebrokeclubeapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|c:\\users\\felip\\onedrive\\documentos\\thebrokeclub\\thebrokeclubeapi\\models\\transacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|solutionrelative:models\\transacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|c:\\users\\felip\\onedrive\\documentos\\thebrokeclub\\thebrokeclubeapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|c:\\users\\felip\\onedrive\\documentos\\thebrokeclub\\thebrokeclubeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|c:\\users\\felip\\onedrive\\documentos\\thebrokeclub\\thebrokeclubeapi\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24A144A2-16CF-4866-BD94-4CC97B2D4C8C}|TheBrokeClubeAPI.csproj|solutionrelative:data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 144,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Transacoes.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\Models\\Transacoes.cs",
+              "RelativeDocumentMoniker": "Models\\Transacoes.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\Models\\Transacoes.cs",
+              "RelativeToolTip": "Models\\Transacoes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:40:46.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:40:35.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:40:15.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\Data\\DataContext.cs",
+              "RelativeToolTip": "Data\\DataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:40:07.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TheBrokeClubeAPI",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\TheBrokeClubeAPI.csproj",
+              "RelativeDocumentMoniker": "TheBrokeClubeAPI.csproj",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\TheBrokeClubeAPI.csproj",
+              "RelativeToolTip": "TheBrokeClubeAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-10T17:39:47.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\Documentos\\TheBrokeClub\\TheBrokeClubeAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-10T17:39:41.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TheBrokeClubeAPI.props" />
+</Project>

@@ -2,14 +2,16 @@
 import { computed } from 'vue'
 import { Line } from 'vue-chartjs'
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js'
-import { useTransactionsStore } from '../../stores/transactions'
+import type { Transaction } from '../../stores/transactions'
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend)
 
-const transactionsStore = useTransactionsStore()
+const props = defineProps<{
+  transactions: Transaction[]
+}>()
 
 const savingsData = computed(() => {
-  const transactions = [...transactionsStore.transactions].sort((a, b) => 
+  const transactions = [...props.transactions].sort((a, b) => 
     new Date(a.date).getTime() - new Date(b.date).getTime()
   )
 
@@ -52,7 +54,7 @@ const chartOptions = {
     },
     title: {
       display: true,
-      text: 'Seu Progresso',
+      text: 'Seu progresso',
       font: {
         size: 16
       }
@@ -88,7 +90,7 @@ const chartOptions = {
   <div class="card p-6">
     <div class="h-80">
       <Line 
-        v-if="transactionsStore.transactions.length > 0"
+        v-if="transactions.length > 0"
         :data="savingsData" 
         :options="chartOptions" 
       />
