@@ -1,4 +1,4 @@
-# **📌 The Broke Club – Organização do Projeto**
+# **📌 The Broke Club
 
 ## **📝 1. Objetivo do Projeto**
 
