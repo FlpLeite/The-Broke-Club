@@ -56,7 +56,7 @@ const handleSubmit = () => {
     description: description.value,
     category: category.value,
     amount: Number(amount.value),
-    type: type.value as 'income' | 'expense'
+    type: type.value as 'income' | 'expense' | 'investment'
   }
 
   if (props.isEditing && props.transaction) {
@@ -95,7 +95,7 @@ const handleSubmit = () => {
           type="text"
           class="input"
           :class="{ 'border-red-500': errors.description }"
-          placeholder="ex: Salário, Aluguel, Supermercado"
+          placeholder="ex: Salário, Aluguel, Ações"
         />
         <p v-if="errors.description" class="mt-1 text-sm text-red-600">{{ errors.description }}</p>
       </div>
@@ -105,6 +105,7 @@ const handleSubmit = () => {
         <select id="type" v-model="type" class="input">
           <option value="income">Receita</option>
           <option value="expense">Despesa</option>
+          <option value="investment">Investimento</option>
         </select>
       </div>
 

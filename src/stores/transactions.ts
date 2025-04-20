@@ -7,7 +7,7 @@ export interface Transaction {
   description: string
   category: string
   amount: number
-  type: 'income' | 'expense'
+  type: 'income' | 'expense' | 'investment'
 }
 
 export const useTransactionsStore = defineStore('transactions', () => {
@@ -100,6 +100,12 @@ export const useTransactionsStore = defineStore('transactions', () => {
       .reduce((sum, t) => sum + t.amount, 0)
   })
 
+  const totalInvestments = computed(() => {
+    return transactions.value
+      .filter(t => t.type === 'investment')
+      .reduce((sum, t) => sum + t.amount, 0)
+  })
+
   const balance = computed(() => {
     return totalIncome.value - totalExpenses.value
   })
@@ -119,6 +125,21 @@ export const useTransactionsStore = defineStore('transactions', () => {
     return result
   })
 
+  const investmentsByCategory = computed(() => {
+    const result: Record<string, number> = {}
+    
+    transactions.value
+      .filter(t => t.type === 'investment')
+      .forEach(t => {
+        if (!result[t.category]) {
+          result[t.category] = 0
+        }
+        result[t.category] += t.amount
+      })
+      
+    return result
+  })
+
   return {
     transactions,
     categories,
@@ -127,7 +148,9 @@ export const useTransactionsStore = defineStore('transactions', () => {
     deleteTransaction,
     totalIncome,
     totalExpenses,
+    totalInvestments,
     balance,
-    expensesByCategory
+    expensesByCategory,
+    investmentsByCategory
   }
 })
